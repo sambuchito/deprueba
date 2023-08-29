@@ -38,9 +38,17 @@ let getJSONData = function(url){
         hideSpinner();
         return result;
     });
-}
+};
 
-const search_btn = document.getElementById("searchButton");
+/*  */
+
+/* document.addEventListener("DOMContentLoaded", ()=>{
+  let lista = document.getElementsByTagName("li");
+
+  lista[3].innerHTML = "<a class=nav-link href=my-profile.html>" +localStorage.getItem("logeado")+ "</a>";
+}); */
+
+/* const search_btn = document.getElementById("searchButton");
 const close_btn = document.getElementById("botoncerrar");
 const search_box_wrap = document.getElementById("div-wrap");
 const input_search = document.getElementById("searchInput");
@@ -52,9 +60,9 @@ search_btn.addEventListener("click", function(){
 
 close_btn.addEventListener("click", function(){
 	search_box_wrap.classList.remove("active");
-});
+}); */
 
 
-/*  */
+
 
 

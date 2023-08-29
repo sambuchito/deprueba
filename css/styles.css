@@ -50,44 +50,7 @@ nav a {
 
 /* /////////////BLOQUE CSS PARA POP UP LOG IN///////////////// */
 
-/* .login-button-ckbox {
-  display: none;
-  position: absolute;
-} */
 
-/*  ESTO ESTÁ COMENTADO PORQUE ES EL BOTON DE LOGIN ORIGINAL//////
-
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-  font-family:cursive;
-} 
-
-body{
-  height: 100vh;
-  width: 100%;
-  background: #11131e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} 
-
-.show-btn{
-  background: black;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-weight: 500;
-  color: cadetblue;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.1s ease;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-} */
 
 .center-login-box {
   display: flex;
@@ -106,32 +69,11 @@ body{
 
 }
 
-/* CSS DE PRUEBA Y ERROR
-
-.login-button .container-popup {
-  display: none; 
-  position: absolute;
-  top: 50%;
-  left: 50%; */
-
-/* transform:translate(-50%,-50%);
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box; 
-}*/
-
-/* .login-button:active{
-  scale: 0.9;
-}  */
 
 .login-button-ckbox {
   display: none;
 }
 
-/* .show-btn:active{
-  scale: 0.9;
-} */
 
 .container-popup {
   display: none;
@@ -148,7 +90,7 @@ body{
   top: 50%;
   left: 50%;
   margin: -50% 0 0 -50%;
-  transform: translate(-175%, 25%);
+  transform: translate(-50%, 50%);
 }
 
 #show:checked~.container-popup {
@@ -344,14 +286,14 @@ form .signup-link-login a:hover {
   opacity: 1;
 }
 
-.wrapper{
+/* .wrapper{
 	display: flex;
 	
 	align-items: center;
 	justify-content: center;
   margin: 0;
 	padding: 0;
-	/* box-sizing: border-box; */
+	/* box-sizing: border-box; *
 	outline: none;
 	
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -451,10 +393,10 @@ form .signup-link-login a:hover {
 	padding-right: 70px;
   width: 100%;
   transition: all 0.3s ease;
-	/* transition-delay: 0.1s; */
+	transition-delay: 0.1s;
   background-color: #fff;
   opacity: 1;
-}
+} */
 /* ---- from w3 ---- *
  */
 /* -------- CSS SEARCH BAR --------- */
@@ -883,16 +825,16 @@ input:focus {
   margin-right: 4%;
 }
 
-.containerCars {
+#containerCars {
   display: flex;
   flex-direction: column;
 }
 
-.containerCars h4 {
+#containerCars h4 {
   text-align: center;
 }
 
-.lista-cars {
+#lista-cars {
   text-align: justify;
   color: rgb(84, 84, 84);
 }
@@ -902,6 +844,7 @@ input:focus {
   margin-bottom: 2%;
   letter-spacing: 0.75vw;
   font-size: 220%;
+  text-align: center;
 }
 
 .subtitulo5 {
@@ -937,3 +880,21 @@ input:focus {
   background-color: rgba(231, 231, 231, 0.534);
 }
 /*FIN ESTILOS PRODUCT AUTOS*/
+
+/* INICIO ESTILOS BUSCADOR PRODUCTOS */
+
+#search-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#search-input {
+  padding: 10px;
+  width: 300px;
+}
+
+#search-results {
+  margin-top: 20px;
+}
+
+/* FIN ESTILOS BUSCADOR PRODUCTOS */

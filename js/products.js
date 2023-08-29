@@ -59,18 +59,39 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-/* const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
 
-searchInput.addEventListener('input', ()=> {
-  let searchText = searchInput.value.toLowerCase();
+/* function showProductsList(array){
+    let htmlContentToAppend = "";
 
-  let a = productsArray.products.filter(product => product.name.toLowerCase().includes(searchText));
-  showProductsList(a);
-});
- */
+    for(let i = 0; i < array.length; i++){ 
+        let articulo = array[i];
+       
+        if (((minCount == undefined) || (minCount != undefined && parseInt(articulo.cost) >= minCount)) &&
+           ((maxCount == undefined) || (maxCount != undefined && parseInt(articulo.cost) <= maxCount))){
+       
+            htmlContentToAppend += `
+                <div class="list-group-item list-group-item-action">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="` + articulo.image + `" alt="product image" class="img-thumbnail">
+                        </div>
+                         <div class="col">
+                            <div class="d-flex w-100 justify-content-between">
+                               <div class="mb-1">
+                                    <h4>`+ articulo.name + ' - ' + articulo.currency + " " + articulo.cost + `</h4>
+                                    <p> `+ articulo.description +`</p> 
+                                </div>
+                                <small class="text-muted">` + articulo.soldCount + ` artículos</small> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
+        }
 
-
+        document.getElementById("container").innerHTML = htmlContentToAppend; 
+    }
+}
 
 function sortAndShowCategories(sortCriteria){
     
@@ -141,4 +162,4 @@ searchInput.addEventListener('input', ()=> {
 
   let a = productsArray.products.filter(product => product.name.toLowerCase().includes(searchText));
   showProductsList(a);
-});
+}); */

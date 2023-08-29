@@ -11,9 +11,16 @@ document.addEventListener("DOMContentLoaded", function(){
         localStorage.setItem("catID", 103);
         window.location = "products.html"
     });
+
+   /*  if (localStorage.getItem("logeado") === null){
+        location.replace("login.html");   
+    }  */     
+    
 });
 
-const searchInput = document.getElementById('search-input');
+
+
+/* const searchInput = document.getElementById('search-input');
 const searchResults = document.getElementById('search-results');
 
 searchInput.addEventListener('input', ()=> {
@@ -21,4 +28,4 @@ searchInput.addEventListener('input', ()=> {
 
   let a = productsArray.products.filter(product => product.name.toLowerCase().includes(searchText));
   showProductsList(a);
-});
+}); */
