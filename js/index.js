@@ -12,20 +12,21 @@ document.addEventListener("DOMContentLoaded", function(){
         window.location = "products.html"
     });
 
-   /*  if (localStorage.getItem("logeado") === null){
-        location.replace("login.html");   
-    }  */     
-    
 });
 
 
 
-/* const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
+const searchInputInicio = document.getElementById('search-input-inicio');
+const searchResultsInicio = document.getElementById('search-results-inicio');
 
-searchInput.addEventListener('input', ()=> {
-  let searchText = searchInput.value.toLowerCase();
-
-  let a = productsArray.products.filter(product => product.name.toLowerCase().includes(searchText));
-  showProductsList(a);
-}); */
+searchInputInicio.addEventListener('input', () => {
+    let searchText = searchInputInicio.value.toLowerCase();
+  
+    let filteredProducts = productsArray.products.filter(product => product.name.toLowerCase().includes(searchText));
+  
+    if (filteredProducts.length === 0) {
+      searchResults.innerHTML = '<p>No se encontraron resultados</p>';
+    } else {
+      showProductsList(filteredProducts);
+    }
+  });

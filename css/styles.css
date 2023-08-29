@@ -37,10 +37,10 @@ nav a {
 }
 
 .container-popup {
-  /* top: 50%;
+  top: 50%;
   left: 50%;
   transform-origin: translate(-50%,-50%);
-  transform: center; */
+  transform: center; 
   position: relative;
 }
 
@@ -222,11 +222,66 @@ form .signup-link-login a:hover {
 
 /* -------- CSS SEARCH BAR --------- */
 
-/*ESTILO PARA LA BARRA DE BUSQUEDA*/
-/* .barrabuscar{
+/* INICIO ESTILOS BUSCADOR PRODUCTOS INICIO */
+
+#search-container-inicio {
+  text-align: center;
+  margin-top: 50px;
   position: absolute;
   padding: 5px;
   display: flex;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#search-input-inicio {
+  width: 0px;
+  height: 30px;
+  padding: 0 15px;
+  font-size: 18px;
+  color: #f8f8f8;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+  flex-direction: left;
+}
+
+#search-results-inicio{
+  width: 0px;
+  height: 30px;
+  padding: 0 15px;
+  font-size: 18px;
+  color: #f8f8f8;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+  flex-direction: left;
+}
+
+#search-results-inicio {
+  margin-top: 20px;
+  position: absolute;
+}
+
+.barrabuscar:hover input{
+  width: 200px;
+}
+
+.barrabuscar input:focus{
+  width: 200px;
+} 
+
+/* FIN ESTILOS BUSCADOR PRODUCTOS INICIO */
+
+/* ESTILO PARA LA BARRA DE BUSQUEDA*/
+ .barrabuscar{
+  position: absolute;
+  padding: 5px;
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
 }
 .barrabuscar input{
   width: 0px;
@@ -245,10 +300,10 @@ form .signup-link-login a:hover {
 
 .barrabuscar input:focus{
   width: 200px;
-} */
+} 
 /*ESTILO PARA EL BOTTONBUSQUEDA*/
 
-/* .btnbusqueda-barrabuscar{
+.btnbusqueda-barrabuscar {
   position: absolute;
   top: 0;
   right: 0;
@@ -261,7 +316,7 @@ form .signup-link-login a:hover {
   font-size: 20px;
   border-radius: 50%;
   cursor: pointer;
-} */
+} 
 
 /* ... from ameo ... */
 
@@ -286,14 +341,14 @@ form .signup-link-login a:hover {
   opacity: 1;
 }
 
-/* .wrapper{
+.wrapper{
 	display: flex;
 	
 	align-items: center;
 	justify-content: center;
   margin: 0;
 	padding: 0;
-	/* box-sizing: border-box; *
+	/* box-sizing: border-box; */
 	outline: none;
 	
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -396,10 +451,11 @@ form .signup-link-login a:hover {
 	transition-delay: 0.1s;
   background-color: #fff;
   opacity: 1;
-} */
-/* ---- from w3 ---- *
- */
-/* -------- CSS SEARCH BAR --------- */
+} 
+/* ---- from w3 ---- */
+
+
+/* -------- FIN CSS SEARCH BAR --------- */
 
 
 
@@ -798,11 +854,6 @@ body {
   font-size: 22px;
 }
 
-/*.form-control:before{
-
-acá irían los íconos
-
-}*/
 
 .form-control {
   border-radius: 0px;
