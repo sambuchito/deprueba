@@ -141,3 +141,80 @@ document.addEventListener("DOMContentLoaded", function(e){
         showCategoriesList();
     });
 });
+
+
+
+  /* const productsData = "https://japceibal.github.io/emercado-api/cats_products/"; */
+  const productsData = {
+    products: [
+      {
+        name: 'Autos',
+        category: 'autos'
+      },
+      {
+        name: 'Muñeca',
+        category: 'juguetes'
+      },
+      {
+        name: 'Mueble',
+        category: 'muebles'
+      },
+      {
+        name: 'martillos',
+        category: 'herramientas'
+      },
+      {
+        name: 'laptop',
+        category: 'computadoras'
+      },
+      {
+        name: 'ropa',
+        category: 'vestimenta'
+      },
+      {
+        name: 'cocina',
+        category: 'electrodomesticos'
+      },
+      {
+        name: 'futbol',
+        category: 'deporte'
+      },
+      {
+        name: 'celular',
+        category: 'celulares'
+      }
+      // Agrega más productos aquí
+    ]
+  };
+
+  const searchInputCategoria = document.getElementById('search-input-categoria');
+  const searchResultsCategoria = document.getElementById('search-results-categoria');
+
+  searchInputCategoria.addEventListener('input', () => {
+    const searchText = searchInputCategoria.value.toLowerCase();
+
+    let filteredResults = productsData.products.filter(product => product.name.toLowerCase().includes(searchText));
+
+    displayResults(filteredResults, searchResultsCategoria);
+  });
+
+  function displayResults(results, container) {
+    container.innerHTML = '';
+
+    if (results.length === 0) {
+      container.innerHTML = '<p>No se encuentran resultados para mostrar</p>';
+      return;
+    }
+
+    results.forEach(result => {
+      const resultItem = document.createElement('div');
+      resultItem.textContent = result.name;
+      resultItem.classList.add('search-results-categoria');
+      container.appendChild(resultItem);
+
+      resultItem.addEventListener('click', () => {
+        // Redirigir a la página del producto
+        window.location.href = `product.html?productName=${encodeURIComponent(result.name)}`;
+      });
+    });
+  };

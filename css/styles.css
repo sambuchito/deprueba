@@ -220,63 +220,18 @@ form .signup-link-login a:hover {
 
 /*////////FIN BLOQE CSS POP UP LOG IN//////////// */
 
+/* ESTILOS BUSCADORES INICIO PRUEBA */
+
 /* -------- CSS SEARCH BAR --------- */
+
 
 /* INICIO ESTILOS BUSCADOR PRODUCTOS INICIO */
 
-#search-container-inicio {
-  text-align: center;
-  margin-top: 50px;
-  position: absolute;
-  padding: 5px;
-  display: flex;
-  text-align: center;
-  margin-top: 50px;
-}
 
-#search-input-inicio {
-  width: 0px;
-  height: 30px;
-  padding: 0 15px;
-  font-size: 18px;
-  color: #f8f8f8;
-  outline: none;
-  border: 1px solid silver;
-  border-radius: 30px;
-  transition: all 0.6s ease;
-  flex-direction: left;
-}
+/* ESTILO PARA LA BARRA DE BUSQUEDA MARIANA */
 
-#search-results-inicio{
-  width: 0px;
-  height: 30px;
-  padding: 0 15px;
-  font-size: 18px;
-  color: #f8f8f8;
-  outline: none;
-  border: 1px solid silver;
-  border-radius: 30px;
-  transition: all 0.6s ease;
-  flex-direction: left;
-}
 
-#search-results-inicio {
-  margin-top: 20px;
-  position: absolute;
-}
-
-.barrabuscar:hover input{
-  width: 200px;
-}
-
-.barrabuscar input:focus{
-  width: 200px;
-} 
-
-/* FIN ESTILOS BUSCADOR PRODUCTOS INICIO */
-
-/* ESTILO PARA LA BARRA DE BUSQUEDA*/
- .barrabuscar{
+/* .barrabuscar{
   position: absolute;
   padding: 5px;
   display: flex;
@@ -296,17 +251,20 @@ form .signup-link-login a:hover {
 }
 .barrabuscar:hover input{
   width: 200px;
+  color: red;
 }
 
 .barrabuscar input:focus{
   width: 200px;
-} 
-/*ESTILO PARA EL BOTTONBUSQUEDA*/
+  color: cadetblue;
+}   */
+/*ESTILO PARA EL BOTTONBUSQUEDA MARIANA */
 
-.btnbusqueda-barrabuscar {
-  position: absolute;
+/* .btnbusqueda-barrabuscar {
+  position: relative;
   top: 0;
   right: 0;
+  margin-right: 15%;
   background-color: #f8f8f8 ;
   width: 40px;
   height: 40px;
@@ -316,39 +274,19 @@ form .signup-link-login a:hover {
   font-size: 20px;
   border-radius: 50%;
   cursor: pointer;
-} 
+}  */ 
 
-/* ... from ameo ... */
-
-/* #searchbar-container {
-  text-align: center;
-  margin-top: 50px;
-} */
-/* #searchbar-input {
-  padding: 10px;
-  
-} */
-/* #searchbar-results {
-  margin-top: 20px;
-} */
-
-/* .... from ameo .... */
 
 /* ---- from w3 ---- */
 
-::placeholder { 
-  color: silver;
-  opacity: 1;
-}
-
-.wrapper{
+/* .wrapper{
 	display: flex;
 	
 	align-items: center;
 	justify-content: center;
   margin: 0;
 	padding: 0;
-	/* box-sizing: border-box; */
+	/* box-sizing: border-box; *
 	outline: none;
 	
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -451,7 +389,8 @@ form .signup-link-login a:hover {
 	transition-delay: 0.1s;
   background-color: #fff;
   opacity: 1;
-} 
+}  */
+
 /* ---- from w3 ---- */
 
 
@@ -948,4 +887,70 @@ input:focus {
   margin-top: 20px;
 }
 
+
+.search-results {
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+}
+
 /* FIN ESTILOS BUSCADOR PRODUCTOS */
+
+#search-container-categoria {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#search-input-categoria {
+  padding: 10px;
+  width: 300px;
+}
+
+#search-results-categoria {
+  margin-top: 20px;
+}
+
+.search-results-categoria {
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+}
+
+/* .search-results-categoria:active {
+  display: flex;
+}
+ */
+
+ #search-container-inicio {
+  text-align: center;
+  margin-top: 50px;
+  position: sticky;
+  
+}
+
+#search-input-inicio {
+  padding: 10px;
+  width: 300px;
+}
+
+#container-resultados-inicio {
+  margin-top: 20px;
+}
+
+.search-results-inicio {
+  /* visibility: hidden; */
+  opacity: 0;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+}

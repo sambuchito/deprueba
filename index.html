@@ -10,8 +10,8 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> <!-- SEARCHBAR CON W3 -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> <!-- para barra mariana -->
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> --><!-- SEARCHBAR CON W3 -->
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> --> <!-- para barra mariana -->
 </head>
 
 <body>
@@ -71,14 +71,7 @@
           </li>
           <li class="nav-item">
 
-            <div class="barrabuscar" id="search-container-inicio">
-              <input type="search" id="search-input-inicio" placeholder="Buscar...">
-              <div class="btnbusqueda-barrabuscar">
-                <i class="fa fa-search incon"></i>
-                <div id="search-results-inicio"></div>
-            </div>
-
-              <!--PARA INCERTAR BOTTON DE BUSQUEDA EN LA BARRA-->
+            <!--PARA INCERTAR BOTTON DE BUSQUEDA EN LA BARRA-->
             <!-- <div class="barrabuscar">
               <input id="searchbar" type="text" placeholder="Buscar..." required>
               <div class="btnbusqueda-barrabuscar">
@@ -106,23 +99,58 @@
               </div>
             </div> -->
 
-              
-            <!-- <div id="search-container">
-              <form action="https://maximiliem.github.io/e-mercado/" target="_top">
-                <input type="search" id="search-input" placeholder="Buscar...">
-                <div id="search-results"></div>
-              </div>
-              </form>
-            </div> -->
-
+      
           </li>
 
         </ul>
       </div>
     </div>
    </nav>
+
+   
+    
   <main>
-    <div class="jumbotron text-center"></div>
+    <div class="jumbotron text-center">
+
+      <!-- <div class="barrabuscar">
+        <input id="searchbar" type="text" placeholder="Buscar..." required>
+        <div class="btnbusqueda-barrabuscar">
+          <i class="fa fa-search incon"></i>
+        </div>
+      </div> -->
+
+      <div id="search-container-inicio">
+        <input type="search" id="search-input-inicio" placeholder="Buscar...">
+        <div class="search-results-inicio" id="container-resultados-inicio"></div>
+      </div>
+      
+      <!-- <div class="body-buscador">
+        <div id="loading">
+          <div>Loading...</div>
+        </div>
+        <div id="wrapper">
+          !-- <div id="logo">
+              <img src="img/linux.png" />
+          </div> --
+          <form id="searchForm">
+            <div class="input-append">
+                <input class="span12 input-xxlarge" name="search" type="text" autocomplete="off" placeholder="Buscar...">
+                <button class="btn" type="submit"><i class="icon-search"></i></button>
+            </div>
+          </form>
+        </div>
+        <div id="found"></div>
+        <div id="container-paginator">
+          <div id="paginator">
+              <button class="btn disabled" id="arrowPrevious"><i class="icon-arrow-left"></i></button>
+              <button class="btn" id="arrowNext"><i class="icon-arrow-right"></i></button>
+              <span id="currentPages"></span>
+          </div>
+        </div>
+      </div> -->
+
+
+    </div>
     <div class="album py-5 bg-light">
       <div class="container">
         <div class="row">

@@ -8,6 +8,10 @@ let ordenado = [];
 let minCount = undefined;
 let maxCount = undefined;
 
+/* const urlParams = new URLSearchParams(window.location.search);
+const productName = urlParams.get('productName'); */
+
+
 function sortProducts(criteria, array){
     let result = [];
     if (criteria === ORDER_ASC_BY_PRICE)
@@ -66,7 +70,7 @@ function showProductsList(array){
             `
         }
 
-        document.getElementById("container").innerHTML = htmlContentToAppend; 
+        document.getElementById("container-productos").innerHTML = htmlContentToAppend; 
     }
 }
 
